@@ -3,8 +3,6 @@ python:
     - '3.6'
 
 install:
-    - pip install -u pytest
-    - pip install -u requests
+    - pip install -r requirements.txt
 script:
     - pytest
-	
