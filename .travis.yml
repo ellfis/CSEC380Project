@@ -1,10 +1,10 @@
 language: python
 python:
-	- '3.6'
+    - '3.6'
 
 install:
-	- pip install -u pytest
-	- pip install -u requests
+    - pip install -u pytest
+    - pip install -u requests
 script:
-	- pytest
+    - pytest
 	
