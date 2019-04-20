@@ -23,6 +23,41 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `info`
+--
+
+CREATE TABLE IF NOT EXISTS `info` (
+  `info_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `Workplace` varchar(255) NOT NULL,
+  `School` varchar(255) NOT NULL,
+  `Phone` varchar(64) NOT NULL,
+  `Interest` varchar(64) NOT NULL,
+  `Relationship` int(11) NOT NULL,
+  `Interested_In` varchar(64) NOT NULL,
+  `ScreenName` varchar(64) NOT NULL,
+  PRIMARY KEY (`info_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `info`
+--
+
+INSERT INTO `info` (`info_id`, `user_id`, `Workplace`, `School`, `Phone`, `Interest`, `Relationship`, `Interested_In`, `ScreenName`) VALUES
+(1, 1, 'None', 'RIT', '585-201-8080', 'Computers, Information Security', -1, 'Aliens', 'Slashgames'),
+(2, 2, 'None', 'None', 'None', 'None', -1, 'None', 'None'),
+(3, 8, 'None', 'None', 'None', 'None', -1, 'None', 'None'),
+(4, 9, 'None', 'None', 'None', 'None', -1, 'None', 'None'),
+(5, 10, 'None', 'None', 'None', 'None', -1, 'None', 'None'),
+(6, 11, 'None', 'None', 'None', 'None', -1, 'None', 'None'),
+(8, 3, 'te', 'te2', 'te3', 'te4', 2, 'te5', 'te6'),
+(10, 12, 'None', 'Rochester institute of technology', 'None', 'None', -1, 'Women', 'None'),
+(11, 4, 'test', 'test2', 'test3', 'Computers', -1, 'Aliens', 'Slashgames'),
+(12, 13, 'None', 'None', 'None', 'None', -1, 'None', 'None'),
+(13, 14, 'None', 'None', 'None', 'None', -1, 'None', 'None');
+
+-- --------------------------------------------------------
+--
 -- Table structure for table `posts`
 --
 
@@ -67,9 +102,9 @@ INSERT INTO `profiles` (`profile_id`, `user_id`, `picture_url`) VALUES
 (9, 10, 'images/arm_stock.jpg'),
 (10, 11, 'images/arm_stock.jpg'),
 (11, 12, 'http://www.timeslive.co.za/incoming/2015/10/20/arm.jpg/ALTERNATES/crop_630x400/arm.jpg'),
-(12, 13, 'images/arm_stock.jpg', '13,1'),
-(13, 14, 'images/arm_stock.jpg', '14'),
-(14, 3, 'images/arm_stock.jpg', '1,2');
+(12, 13, 'images/arm_stock.jpg'),
+(13, 14, 'images/arm_stock.jpg'),
+(14, 3, 'images/arm_stock.jpg');
 
 -- --------------------------------------------------------
 
